@@ -1,4 +1,11 @@
 function numbers(l) {
+  /*
+  Input(s): a list of strings
+  Output(s): a list of integers
+  Description:
+  This function converts a list of strings into a
+  list of integers
+  */
   var o = [];
   for (let i in l) {
     var n = parseInt(l[i], 10);
@@ -18,7 +25,7 @@ function min_max(a) {
   a.sort((a, b) => a - b);
   min = a[0];
   max = a[a.length - 1];
-  return { min: min, max: max };
+  return { min: min, max: max }; // without any quotation marks, this will not be treated as a variable, it is a string
 }
 
 function handleButton1Click() {
