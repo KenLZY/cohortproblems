@@ -15,10 +15,13 @@ function numbers(l) {
   }
   return o;
 }
-// input: an array of numbers
-// output: an object containing 'min', with the minimum of the array
-//          and 'max' the maximum of the array.
+
 function min_max(a) {
+  /*
+  input: an array of numbers
+  output: an object containing 'min', with the minimum of the array
+          and 'max' the maximum of the array.
+  */
   var min = null;
   var max = null;
   // TODO: fixme
