@@ -46,5 +46,9 @@ router.get('/all/withstaff/', async function(req, res, next) {
     res.send(`${JSON.stringify(deptMap)}`);
 })
 
+router.get('/count/', async function(req, res, next){
+    
+})
+
 
 module.exports = router;
