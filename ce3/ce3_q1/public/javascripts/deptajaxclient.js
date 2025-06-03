@@ -24,6 +24,13 @@ function handleSendButtonClick() {
             var res = xhr.responseText;
             var json = JSON.parse(res);
             // TODO: fixme
+            var ol = document.getElementById("deptsregion");
+            var html = "";
+            for (var i = 0; i < json.length; i++) {
+                var dept = json[i];
+                html += `<li> ${dept.code} </li>`;
+            }
+            ol.innerHTML = html;
         }
     }; 
     // cosntructing a HTTP POST request
